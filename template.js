@@ -3,15 +3,23 @@
 /*
 INSTRUCTIONS
 
+    Add instructions here.
+
 NOTES
+
+    INPUT
+        const input = ''
+
+    OUTPUT
+        boolean
 */
 
 const template = (input) => {
   const output = 'output'
 
-  return console.log(output)
+  return output
 }
 
 const input = ''
 
-template(input)
+console.log(template(input))
