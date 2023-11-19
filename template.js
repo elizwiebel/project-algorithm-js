@@ -15,9 +15,9 @@ NOTES
 */
 
 const template = (input) => {
-  const output = 'output'
+    const output = 'output'
 
-  return output
+    return output
 }
 
 const input = ''
