@@ -1,0 +1,7 @@
+# Ignore Config Files
+.prettierrc
+package-lock.json
+package.json
+
+# Ignore Dependencies
+node_modules
