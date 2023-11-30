@@ -9,7 +9,7 @@ INPUT
 
 OUTPUT
 
-    'panagram'
+    'pangram'
 */
 
 function pangrams(str) {
