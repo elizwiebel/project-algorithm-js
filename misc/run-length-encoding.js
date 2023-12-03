@@ -12,7 +12,29 @@ OUTPUT
     'a4b3c3'
 */
 
-function encodeString(str) {}
+function encodeString(str) {
+    let result = "";
+    let count = 0;
+    let currentChar = str[0];
+
+    for (let i = 0; i < str.length + 1; i++) {
+        console.log(i);
+        console.log("    char:", str[i]);
+
+        if (currentChar !== str[i]) {
+            result += currentChar + count;
+
+            currentChar = str[i];
+            count = 1;
+        } else {
+            count++;
+        }
+
+        console.log("    count:", count);
+        console.log("    currentChar:", currentChar);
+        console.log("    result:", result);
+    }
+}
 
 const input = "aaaabbbccc";
 
