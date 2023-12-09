@@ -18,4 +18,17 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var invertTree = function (root) {};
+var invertTree = function (root) {
+    if (root) {
+        swap(root);
+        invertTree(root.left);
+        invertTree(root.right);
+    }
+    return root;
+};
+
+var swap = function (node) {
+    var left = node.left;
+    node.left = node.right;
+    node.right = left;
+};
